@@ -35,7 +35,7 @@ class con {
 			$this->c = new PDO($this->dsn, $this->d, base64_decode($this->pwd));
 		} catch (PDOException $e) {
 			$this->c = null;
-			error_log(error_get_last());
+			error_log($e);
 		}
     }
     
@@ -116,7 +116,7 @@ class con {
 		return $r;
 	}
 
-	public function file_manip(psn $nam) {
+	public function img_add(psn &$nam) {
 		$dir = "img/";
 		if (filter_input(INPUT_POST,'fileSubmit') == 'propic'){
 			if (!file_exists($dir)) {
@@ -125,10 +125,26 @@ class con {
 			//make file
 			$fi = new FilesystemIterator($dir, FilesystemIterator::SKIP_DOTS);
 			if (file_exists($dir . $nam->name)) {
-				getimagesize($_FILES['fileToUpload']);
+				getimagesize($_FILES['imgtoupload']);
 				$cnt = iterator_count($fi);
-				echo $cnt;
+				//echo $cnt;
+				$nam->username = $dir . $nam->name . "$cnt";
+				return move_uploaded_file($_FILES['imgtoupload']['tmp_name'], $nam->username);
+			} else {
+				$nam->username = $dir . $nam->name;
+				return move_uploaded_file($_FILES['imgtoupload']['tmp_name'], $nam->username);
 			}
+		}
+	}
+
+	public function imgupload(psn $m) {
+		if ($this->img_add($m)) {
+			$uid = $this->getid($m->email);
+			if ($uid > 0) {
+				$this->setpic($uid, $m->username);
+			}
+		} else {
+			return false;
 		}
 	}
 
