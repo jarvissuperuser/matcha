@@ -1,11 +1,6 @@
 <?php
 
 require_once'config/cfg.php';
-$head = file_get_contents('cls/test.hd');
-$hdr = file_get_contents('cls/hdr.hd');
-$lgn = file_get_contents('cls/lgn.hd');
-$reg = file_get_contents('cls/suf.hd');
-$hm = file_get_contents("cls/hm.hd");
 $rg = null;
 $con = new con();
 if (filter_input(0, 'logout') == 'yes') {
@@ -57,6 +52,13 @@ if (filter_input(INPUT_GET, "login") == 'return') {
 if (filter_input(INPUT_GET, "home") == 'new') {
 	if (isset($_SESSION['login'])) {
 		echo $hm;
+	} else {
+		header('Location: ?login=return');
+	}
+}
+if (filter_input(INPUT_GET, "profile") == 'editself') {
+	if (isset($_SESSION['login'])) {
+		echo $pe;
 	} else {
 		header('Location: ?login=return');
 	}

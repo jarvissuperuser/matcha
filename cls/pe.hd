@@ -1,0 +1,42 @@
+
+<section class=" cnt row container-fluid">
+	<center>
+			<h2 class="text-uppercase ">Customize</h2>
+			<p class="h5 text-info"></p>
+			<div class='img-circle col-sm-3 cbt col-xs-6'>
+				<div class="ibx "></div>
+				<h4>Your Profile</h4>
+			</div>
+			<form class="cnt frm" method='post' >
+				<input class="form-control" type="file" name='imgtoupload'/>
+				<input class="form-control" type="text" name="interests" placeholder="interests" value="">
+				<input class="form-control" type="text" name="tel" placeholder="PhoneNumber" value="">
+				<input class="form-control" type="text" name="country" placeholder="Country" value="">
+				<input class="form-control" type="text" name="city" placeholder="City" value="">
+				<select class="form-control" name='preference' >
+					<option>I am-</option>
+					<option value="M">Male</option>
+					<option value="F">Female</option>
+					<option value="A">Ambiguous</option>
+					<option value="AM">Ambiguous Male</option>
+					<option value="AF">Ambiguous Female</option>
+				</select>
+				<select class="form-control" name='preference' >
+					<option>i Like</option>
+					<option value="AA">Any</option>
+					<option value="M">Men</option>
+					<option value="F">Women</option>
+					<option value="A">Ambiguous</option>
+					<option value="AF">Ambiguous Women</option>
+					<option value="AM">Ambiguous Men</option>
+				</select>
+				<input type="text" class="form-control" name="os" placeholder="other social networks">
+				<input type="password" class="form-control" name="old" placeholder="OLD Password">
+				<input type="password" class="form-control" name="cpwd" placeholder="Confirm password">
+				<input type="password" class="form-control" name="pwd" placeholder="New password">
+
+				<input class="btn form-control" type="submit" name="update" value="update">
+			<br>
+			</form>
+	</center>
+</section>
