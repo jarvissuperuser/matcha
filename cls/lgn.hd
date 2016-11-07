@@ -1,0 +1,13 @@
+<section class=" cnt row container-fluid">
+                <center>
+                        <h2 class="text-uppercase ">Login</h2>
+                        <p class="h5 text-info">And find your Match..</p>
+                        <form class="frm  " method="post">
+                            <input type="text" class="form-control" name="log" placeholder="email">
+                        <!--<br>-->
+                        <input type="password" class="form-control" name="pwd" placeholder="password">
+<!--                        <br>-->
+                        <input class="btn form-control" type="submit" name="login" value="ok">
+                        </form>
+                </center>
+            </section>

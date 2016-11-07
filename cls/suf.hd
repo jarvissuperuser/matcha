@@ -1,0 +1,15 @@
+ <section class=" cnt row container-fluid">
+	<center>
+			<h2 class="text-uppercase ">Join</h2>
+			<p class="h5 text-info">And find your Match..</p>
+			<form class="cnt frm" method="post">
+				<input type="text" class="form-control" name="log" placeholder="email" required="">
+				<input type="password" class="form-control" name="pwd" placeholder="password" required="">
+				<input class="form-control" type="text" name="name" placeholder="First Name">
+				<input type="text" class="form-control" name="surname" placeholder="Last Name">
+				<input type="text" class="form-control" name="username" placeholder="Username">
+				<input type="password" class="form-control text-capitalize" name="cpwd" placeholder="confirm password" required="">
+				<input class="btn form-control text-capitalize" type="submit" name="submit" value="ok">
+			</form>
+	</center>
+</section>

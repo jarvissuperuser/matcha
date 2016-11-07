@@ -1,0 +1,30 @@
+
+<nav class="navbar navbar-fixed-top cbt">
+            <div class="container-fluid">
+                    <div class="">
+                        <a class=" text-capitalize navbar-brand na"><h2 class="">matcha</h2>
+                        </a>
+                    </div>
+                    <div class="navbar-right">
+                        <div class="">
+                            <button role="button" class="dropdown-toggle navbar-btn" href="#"
+                               data-toggle="dropdown" aria-haspopup="true"
+                               aria-expanded="false" id="nvm"
+                               ><span class="glyphicon glyphicon-menu-down"></span></button>
+                            <ul class="dropdown-menu" aria-laballedby="nvm">
+                                <li class=""> <a href="#"> home </a></li>
+                                <li class=""> <a href="#">profile</a></li>
+                                <li class=""> <a href="#">flirts</a></li>
+                                <li class=""> <a href="#">messages</a></li>
+                                <li class="" onclick="lo()">  <a >logout</a></li>
+                            </ul>
+
+                            <button class="text-uppercase navbar-btn ">
+                                <span class="glyphicon glyphicon-off "></span></button>
+                                <a></a>
+                        </div>
+                    </div>
+
+                </div>
+                <hr>
+            </nav>

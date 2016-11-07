@@ -1,0 +1,41 @@
+
+<section class=" row container-fluid">
+                <!--left panel-->
+                <div class="container-fluid">
+                    <div class="panel col-sm-4 cnt  col-xs-6">
+                        <a class='btn '><h3 >
+                                <span class='glyphicon glyphicon-envelope'></span>
+                                M'text
+                            </h3></a>
+                        <br>
+                        <a class='btn  '><h3 ><span class='glyphicon glyphicon-send'></span>
+                                M'Speed search
+                            </h3></a>
+                        <br>
+                        <a class='btn  '><h3 >
+                                <span class='glyphicon glyphicon-ban-circle'></span>
+                                report
+                            </h3></a>
+                    </div>
+                    <div class="col-sm-offset-3">
+
+                    </div>
+                    <div class='col-sm-3 cbt col-xs-6'>
+                        <div class="ibx c"></div>
+                        <h4>hana</h4>
+                    </div>
+                    <div class="col-sm-offset-3">
+
+                    </div>
+                    <div class='col-sm-3  cnt col-xs-6'>
+                        <div class="ibx"></div>
+                        <h4>desi</h4>
+                    </div>
+                    <div class="col-sm-offset-3 ">
+                    </div>
+                    <div class='col-sm-3 cbt  col-xs-6'>
+                        <div class="ibx"></div>
+                        <h4>tes</h4>
+                    </div>
+                </div>
+            </section>
