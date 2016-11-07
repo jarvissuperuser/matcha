@@ -116,6 +116,22 @@ class con {
 		return $r;
 	}
 
+	public function file_manip(psn $nam) {
+		$dir = "img/";
+		if (filter_input(INPUT_POST,'fileSubmit') == 'propic'){
+			if (!file_exists($dir)) {
+				mkdir($dir, 0777);
+			}
+			//make file
+			$fi = new FilesystemIterator($dir, FilesystemIterator::SKIP_DOTS);
+			if (file_exists($dir . $nam->name)) {
+				getimagesize($_FILES['fileToUpload']);
+				$cnt = iterator_count($fi);
+				echo $cnt;
+			}
+		}
+	}
+
 	public function __destruct() {
 		$this->c = null;
 	}
