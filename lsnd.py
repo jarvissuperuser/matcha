@@ -1,10 +1,6 @@
 #/usr/bin/env 'python'
 from os.path import isdir, exists
-from os import makedirs,mkdir, getcwd
-import os
-import sys
-import string
-
+from os import makedirs,mkdir, getcwd, system
 def chkdir(dirloc):
 	ex = False
 	if (isdir(dirloc)):
@@ -21,10 +17,10 @@ def gprj():
 	fn = wd.split('/')
 	fn.reverse()
 	if (ctd(fn[0])):
-		os.system('cp -a ./* /var/www/html/'+fn[0])
+		system('cp -a ./* /var/www/html/'+fn[0])
 	else:
 		mkdir('/var/www/html/'+fn[0])
-		os.system('cp -a ./* /var/www/html/'+fn[0])
+		system('cp -a ./* /var/www/html/'+fn[0])
 	return 'Copied' 
 
 print str(ctd('dm'))
