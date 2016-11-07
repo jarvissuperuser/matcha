@@ -3,6 +3,7 @@
 require_once'config/cfg.php';
 $rg = null;
 $con = new con();
+$pg = 0;
 if (filter_input(0, 'logout') == 'yes') {
 	//session_unregister("login");
 	session_destroy();
@@ -45,9 +46,11 @@ echo "<body class=container>";
 if (filter_input(INPUT_GET, 'signup') == 'newuser') {
 	echo $reg;
 	echo json_encode($rg);
+	$pg = 1;
 }
 if (filter_input(INPUT_GET, "login") == 'return') {
 	echo $lgn;
+	$pg = 1;
 }
 if (filter_input(INPUT_GET, "home") == 'new') {
 	if (isset($_SESSION['login'])) {
@@ -55,6 +58,7 @@ if (filter_input(INPUT_GET, "home") == 'new') {
 	} else {
 		header('Location: ?login=return');
 	}
+	$pg = 1;
 }
 if (filter_input(INPUT_GET, "profile") == 'editself') {
 	if (isset($_SESSION['login'])) {
@@ -62,6 +66,10 @@ if (filter_input(INPUT_GET, "profile") == 'editself') {
 	} else {
 		header('Location: ?login=return');
 	}
+	$pg = 1;
+}
+if ($pg == 0) {
+	header('Location: ?home=new');
 }
 
 echo "<script src='js/bootstrap.min.js'></script>";
