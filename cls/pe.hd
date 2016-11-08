@@ -4,7 +4,32 @@
 			<h2 class="text-uppercase ">Customize</h2>
 			<p class="h5 text-info"></p>
 			<div class='img-circle col-sm-3 cbt col-xs-6'>
-				<div class="ibx "></div>
+				<div class="ibx ">
+					<svg id="propic"
+						viewBox="0 0 150 150"
+						height="150"
+						width="150">
+					   <g
+						  transform="translate(0,-902.36216)"
+						  id="layer1">
+						 <ellipse
+							ry="36.870567"
+							rx="37.880722"
+							cy="953.87231"
+							cx="77.781746"
+							id="path4684"
+							style="fill:#ff0000;stroke:none;stroke-opacity:1" />
+						 <rect
+							ry="30.55707"
+							y="998.8241"
+							x="13.131984"
+							height="74.246246"
+							width="121.72338"
+							id="rect4688"
+							style="fill:#ff0000;stroke:none;stroke-opacity:1" />
+					   </g>
+					 </svg>
+				</div>
 				<h4>Your Profile</h4>
 			</div>
 			<form class="cnt frm" method='post' >
