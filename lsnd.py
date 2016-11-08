@@ -1,4 +1,4 @@
-#/usr/bin/env 'python'
+#/usr/lib/python2.7
 from os.path import isdir, exists
 from os import makedirs,mkdir, getcwd, system
 def chkdir(dirloc):
