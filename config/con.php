@@ -150,6 +150,7 @@ class con {
 
 	public function getpsn($ml) {
 		$uid = $this->getid($ml);
+		return $uid;
 	}
 
 	public function __destruct() {

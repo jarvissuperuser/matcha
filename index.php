@@ -39,6 +39,8 @@ if (filter_input(INPUT_POST, 'submit') == 'ok') {
 	} catch (Exception $exc) {
 		echo json_encode($exc);
 	}
+} elseif (filter_input(INPUT_POST, "update") == 'profile') {
+
 }
 echo $head;
 echo $hdr;
