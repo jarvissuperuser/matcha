@@ -46,7 +46,7 @@ class pn extends psn {
 		$q .= "cell = :cell, otherSocial = :other";
 		$q .= ",Bio =:pic ,preference = :pref,Interests = :intr";
 		$q .= "dateofbirth = :dob, city = :cty, country = :ctry";
-		$q .= " where iid = '{$this->uid}'";
+		$q .= " where iid = '{$this->uid}';";
 		$stmt = $this->c->prepare($q);
 		$param = array('cell' => $this->phone, 'other' => $this->other,
 			'intr' => $this->interests, 'dob' => $this->dob, 'pic' => $this->pic,
