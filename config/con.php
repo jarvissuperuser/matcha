@@ -18,7 +18,7 @@ class con {
 	protected $dsn0;
     protected $dsn;
 	public $d = 'root';
-	public $pwd = 'cm9vdDEyMzQ=';
+	public $pwd = 'cm9vdDAo=';
 	public $dbname= 'Matcha';
     public function __construct() {
 		try {
